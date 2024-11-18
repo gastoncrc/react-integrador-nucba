@@ -73,6 +73,10 @@ header {
 }
 
 @media (max-width: 768px) {
+  header {
+    width: 768px;
+  }
+
   .logo-caffe {
     height: 70px;
   }
@@ -87,6 +91,10 @@ header {
   }
 }
 @media (max-width: 576px) {
+  header {
+    width: 576px;
+  }
+
   .menu-icon {
     display: flex;
   }

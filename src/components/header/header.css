@@ -1,0 +1,102 @@
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--brown-header);
+  height: 90px;
+  position: absolute;
+  top: 0;
+  padding: 2rem;
+}
+
+.logo-caffe {
+  height: 80px;
+}
+
+.navbar-list {
+  display: flex;
+  gap: 2rem;
+  font-weight: 600;
+  color: white;
+}
+
+.menu-tools {
+  display: flex;
+  gap: 2rem;
+  color: white;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 1.2rem;
+}
+
+.counter-cart {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  top: 29px;
+  right: 45px;
+  width: 15px;
+  height: 15px;
+  border-radius: 180%;
+  /* border: solid 2px; */
+  font-size: 8px;
+  background-color: #ffd000;
+  color: black;
+}
+
+.cart-icon {
+  display: flex;
+  position: relative;
+}
+
+/* ----------------------------MEDIAQUERIES------------------ */
+@media (max-width: 992px) {
+  header {
+    width: 992px;
+  }
+
+  .logo-caffe {
+    height: 70px;
+  }
+
+  .navbar-list {
+    font-size: 0.8rem;
+  }
+
+  .menu-tools {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo-caffe {
+    height: 70px;
+  }
+
+  .navbar-list {
+    font-size: 0.7rem;
+  }
+
+  .menu-tools {
+    font-size: 0.7rem;
+    gap: 1rem;
+  }
+}
+@media (max-width: 576px) {
+  .menu-icon {
+    display: flex;
+  }
+
+  .cart-icon,
+  .login-icon {
+    display: none;
+  }
+
+  .menu-tools {
+    gap: 0.5rem;
+  }
+}

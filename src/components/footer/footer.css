@@ -23,6 +23,7 @@ footer {
   align-items: center;
   justify-content: center;
   gap: 0.3rem;
+  text-align: center;
 }
 
 .adress-footer,
@@ -45,19 +46,20 @@ footer {
 /* ------------------------mediaqueries---------------- */
 
 @media (max-width: 992px) {
-  footer {
-    width: 992px;
-  }
 }
 
 @media (max-width: 768px) {
 }
 
 @media (max-width: 576px) {
-}
-
-@media (max-width: 375px) {
+  .adress-footer,
+  .phone-footer {
+    font-size: 0.6rem;
+  }
   .footer-bottom-container {
     flex-direction: column;
   }
+}
+
+@media (max-width: 375px) {
 }

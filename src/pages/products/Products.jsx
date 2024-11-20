@@ -18,7 +18,7 @@ const Products = () => {
       <h2 className="products-title">Productos...</h2>
       <hr className="hr" />
       <Filters />
-      <div className="featured_container">
+      <div className="featured-container">
         <div className="cards-container">
           {products.map((product) => {
             return <CardProduct key={product.id} productInfo={product} />;

@@ -19,7 +19,7 @@ const Cart = () => {
       {isEmptyCart ? (
         <h3 className="cart-title">El carrito está vacío</h3>
       ) : (
-        <div className="aaa">
+        <div className="cart-details-container">
           <div className="products_container_cart">
             {cartProducts.map((product) => {
               return <CartProduct key={product.id} cartProduct={product} />;

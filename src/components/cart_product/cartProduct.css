@@ -3,17 +3,27 @@
   width: 550px;
   height: 110px;
   align-items: center;
-  /* background-color: crimson; */
   justify-content: space-around;
+  background-color: white;
+  gap: 0.5rem;
+}
+.img_product {
+  display: flex;
+  height: 90%;
+  align-items: center;
+  justify-content: center;
+}
+.info_cart_item {
+  width: 300px;
 }
 
 .quantity_cart_item {
   display: flex;
   align-items: center;
-  /* background-color: #0008f0; */
-
   width: 30%;
-  justify-content: end;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
 }
 
 .quantity-selector-container {
@@ -66,4 +76,31 @@
 
 .trash-cart {
   color: red;
+}
+
+/* -------MEDIAQ */
+
+@media (max-width: 576px) {
+  .product_cart_item {
+    flex-direction: column;
+    width: 200px;
+    height: auto;
+    gap: 0px;
+    text-align: center;
+  }
+  .img_product {
+    width: 200px;
+    height: auto;
+  }
+
+  .info_cart_item {
+    width: 200px;
+  }
+  .quantity_cart_item {
+    flex-direction: column;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+  }
 }

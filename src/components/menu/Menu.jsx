@@ -1,16 +1,24 @@
 import "./menu.css";
 import { Link } from "react-router-dom";
 
-const Menu = ({ isOpen }) => {
+const Menu = ({ isOpen, closeMenuCategory }) => {
   return (
     <nav className={`navbar-menu ${isOpen && "open"}`}>
-      <Link to="/">Destacados</Link>
+      <Link to="/" onClick={closeMenuCategory}>
+        Destacados
+      </Link>
 
-      <Link to="/about">Nosotros</Link>
+      <Link to="/about" onClick={closeMenuCategory}>
+        Nosotros
+      </Link>
 
-      <Link to="/products">Productos</Link>
+      <Link to="/products" onClick={closeMenuCategory}>
+        Productos
+      </Link>
 
-      <Link to="/contact">Contacto</Link>
+      <Link to="/contact" onClick={closeMenuCategory}>
+        Contacto
+      </Link>
     </nav>
   );
 };

@@ -19,7 +19,7 @@ const FeatureProducts = () => {
         <Hero />
       </div>
       <div className="featured_container">
-        <h2 className="feature-title">Destacados...</h2>
+        <h2 className="feature-title">Destacados</h2>
         <hr className="hr" />
         <div className="cards-container">
           {products.map((product) => {

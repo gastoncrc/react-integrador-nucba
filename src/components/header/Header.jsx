@@ -13,12 +13,16 @@ const Header = () => {
 
   const totalItems = useSelector(selectTotalItems);
 
+  const closeMenuCategory = () => {
+    setIsOpen(false);
+  };
+
   return (
     <header>
       <Link to="/" onClick={() => dispatch(filterByFeature())}>
         <img src={logo} alt="prueba" className="logo-coffee" />
       </Link>
-      <Menu isOpen={isOpen} />
+      <Menu isOpen={isOpen} closeMenuCategory={closeMenuCategory} />
       <div className="menu-tools">
         <div
           className={`menu-toggle ${isOpen && "open"}`}

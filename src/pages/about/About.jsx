@@ -4,7 +4,7 @@ import imgAbout from "../../assets/img/origin-coffee.png";
 function About() {
   return (
     <div className="about-us-container">
-      <h2 className="about-us">Sobre Nosotros...</h2>
+      <h2 className="about-us">Sobre Nosotros</h2>
 
       <div className="data-container">
         <h2 className="about-us-title">Donde el Café se Convierte en Arte</h2>

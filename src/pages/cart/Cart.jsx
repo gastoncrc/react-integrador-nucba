@@ -14,7 +14,7 @@ const Cart = () => {
 
   return (
     <div className="cart_container">
-      <h2 className="cart-title">Mi Carrito...</h2>
+      <h2 className="cart-title">Mi Carrito</h2>
       <hr className="hr" />
       {isEmptyCart ? (
         <h3 className="cart-title">El carrito está vacío</h3>

@@ -37,7 +37,7 @@ function Contact() {
   });
   return (
     <div className="form-container">
-      <h2 className="contact-title">Contactanos...</h2>
+      <h2 className="contact-title">Contactanos</h2>
       <hr className="hr" />
       <form action="#" className="form-contact" onSubmit={formik.handleSubmit}>
         <div className="form-name">

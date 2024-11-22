@@ -116,7 +116,7 @@ export const products = [
     name: "Dipilito",
     origin: "Nicaragua",
     price: 17000,
-    feature: false,
+    feature: true,
   },
   {
     id: 14,

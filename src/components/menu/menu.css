@@ -1,12 +1,5 @@
-/* .search_container {
+.navbar-menu {
   display: flex;
-  align-items: center;
-  justify-content: center;
-} */
-
-.navbar_list {
-  display: flex;
-
   gap: 2rem;
   font-weight: 600;
   color: white;
@@ -17,37 +10,25 @@
 
 /* ----------------------------MEDIAQUERIES------------------ */
 @media (max-width: 992px) {
-  .navbar_list {
-    font-size: 0.8rem;
-  }
 }
 
 @media (max-width: 768px) {
-  .navbar_list {
+  .navbar-menu {
+    display: flex;
     flex-direction: column;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-  }
-  .navbar_menu {
     position: absolute;
     top: 90px;
     left: 0;
     width: 100%;
     height: 100vh;
-    padding: 2rem;
-    transform: translateY(150%);
-    transition: transform 5s ease;
+    transform: translateX(-100%);
+    transition: 0.5s ease all;
     background-color: rgba(26, 26, 26, 0.924);
   }
 
-  .navbar.isActive {
-    transform: translateY(-90px);
+  .navbar-menu.open {
+    transform: translateX(0);
   }
 }
 @media (max-width: 576px) {
-  .navbar_list li {
-    padding-top: 1.5rem;
-  }
 }

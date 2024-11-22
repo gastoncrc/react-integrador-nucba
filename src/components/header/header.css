@@ -49,6 +49,10 @@ header {
   color: black;
 }
 
+.menu-toggle {
+  display: none;
+}
+
 .cart-icon {
   display: flex;
   position: relative;
@@ -78,8 +82,39 @@ header {
     font-size: 0.7rem;
   }
 
-  .menu-icon {
+  /* .menu-icon {
     display: flex;
+  } */
+
+  .menu-toggle {
+    display: flex;
+    flex-direction: column;
+    width: 14px;
+    height: 21px;
+    border: 0;
+    background: transparent;
+    gap: 0.45rem;
+  }
+
+  .menu-toggle span {
+    width: 26px;
+    height: 14px;
+    background-color: white;
+    border-radius: 3px;
+    transform-origin: left;
+    transition: all 0.2s;
+  }
+
+  .menu-toggle.open span {
+    transform: rotate(45deg);
+    /* translate(0px, 0px); */
+  }
+  .menu-toggle.open span:nth-child(2) {
+    opacity: 0;
+  }
+  .menu-toggle.open span:nth-child(3) {
+    transform: rotate(-45deg);
+    /* translate(0px, 0px); */
   }
 
   .login-icon {

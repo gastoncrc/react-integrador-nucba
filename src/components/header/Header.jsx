@@ -16,16 +16,14 @@ const Header = () => {
   return (
     <header>
       <Link to="/" onClick={() => dispatch(filterByFeature())}>
-        <img src={logo} alt="prueba" className="logo-caffe" />
+        <img src={logo} alt="prueba" className="logo-coffee" />
       </Link>
-      <Menu isOpen={isOpen} setIsOpen={setIsOpen} />
+      <Menu isOpen={isOpen} />
       <div className="menu-tools">
-        {/* <a onClick={toggleMenu}> */}
         <div
           className={`menu-toggle ${isOpen && "open"}`}
           onClick={() => setIsOpen(!isOpen)}
         >
-          {/* <i className="fa-sharp fa-solid fa-bars menu-icon"></i> */}
           <span></span>
           <span></span>
           <span></span>

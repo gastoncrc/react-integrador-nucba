@@ -7,8 +7,6 @@ import {
 } from "../../slices/cartSlice";
 import { confirmAlert } from "../alerts/alerts.js";
 import "../cart_product/cartProduct.css";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faTrashCan } from "@fortawesome/fontawesome-svg-core";
 
 const CartProduct = ({ cartProduct }) => {
   const { img, name, origin, price, quantity, id } = cartProduct;

@@ -31,8 +31,6 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-
-  /* background-color: pink; */
   width: 150px;
   justify-content: space-between;
 }
@@ -68,9 +66,7 @@
   border: none;
   width: 20px;
   height: 20px;
-  /* background-color: crimson; */
   color: black;
-  /* font-weight: 600; */
   padding: 0.5px;
 }
 

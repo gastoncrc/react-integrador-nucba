@@ -5,9 +5,7 @@
   justify-content: center;
   width: 100%;
   height: 100vh;
-  /* background-color: blueviolet; */
   color: var(--white);
-  /* border: solid red 1px; */
 }
 
 .hero h1 {

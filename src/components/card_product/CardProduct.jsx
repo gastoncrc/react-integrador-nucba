@@ -1,6 +1,5 @@
 import "./cardProduct.css";
 import { useDispatch } from "react-redux";
-import { addProductToCart } from "../../slices/cartSlice";
 import { alertMsg } from "../alerts/alerts.js";
 
 const CardProduct = ({ productInfo }) => {

@@ -94,6 +94,7 @@ header {
     border: 0;
     background: transparent;
     gap: 0.45rem;
+    cursor: pointer;
   }
 
   .menu-toggle span {

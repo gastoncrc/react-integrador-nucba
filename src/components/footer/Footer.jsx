@@ -28,8 +28,8 @@ const Footer = () => {
         </p>
       </div>
       <div className="footer-bottom-container">
-        <p>Todos los derechos reservados. Copyright 2024.</p>
-        <p>Desarrollado por Gastón Capdevila.</p>
+        <p>Todos los derechos reservados. Copyright 2024</p>
+        <p>Desarrollado por Gastón Capdevila</p>
       </div>
     </footer>
   );
